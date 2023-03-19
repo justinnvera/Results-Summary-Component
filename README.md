@@ -77,5 +77,5 @@ See below:
 - [CSS Box Shadow Generator](https://html-css-js.com/css/generator/box-shadow/) - I always use this for creating `box-shadow` since it can get a tedious to do manually.
 ## Author
 
-- Website - [Add your name here](https://www.justinvera.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/justinnvera)
+- Website - [Jujtin Vera](https://www.justinvera.com)
+- Frontend Mentor - [@justinnvera](https://www.frontendmentor.io/profile/justinnvera)
