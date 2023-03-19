@@ -75,7 +75,6 @@ See below:
 
 - [CSS Gradient Generator](https://cssgradient.io) - This helped me generate my gradients for the `.left` `<div>` card. All I had to do was set it to 180 degrees and select linear gradient. From there, it's as easy as inputting the RGBA values.
 - [CSS Box Shadow Generator](https://html-css-js.com/css/generator/box-shadow/) - I always use this for creating `box-shadow` since it can get a tedious to do manually.
-- 
 ## Author
 
 - Website - [Add your name here](https://www.justinvera.com)
