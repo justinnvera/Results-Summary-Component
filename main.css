@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+* {
+    margin:0;
+    padding:0;
+    border:0;
+}
+/* ! Body  */
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(221, 100%, 96%);
+}
+/* ! Main Grid */
+main {
+    display: grid;
+    grid-template-columns: 325px 325px;
+    grid-template-rows: 425px;
+    grid-template-areas: 
+    "left right";
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0px 20px 20px 0px;
+}
+/* ! Left Card */
+.left {
+    grid-area: left;
+    background: linear-gradient(180deg, rgba(120,87,255,1) 35%, rgba(46,43,233,1) 100%);
+    border-radius: 20px;
+}
+.left-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+}
+.left-title {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-weight: 500;
+    font-size: 14px;
+}
+.overall-score {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    height: 170px;
+    margin-bottom: 3.5rem;
+}
+.overall-score-background {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(78,33,201,1) 35%, rgba(36,33,202,0) 100%);
+    top: 1.5rem;
+}
+#result-1 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
+    margin-top: 3rem;
+    z-index: 1;
+}
+#result-2 {
+    color: hsl(0, 0%, 100%, 0.5);
+    z-index: 1;
+}
+.percentile-notice {
+    color:hsl(0, 0%, 100%);
+}
+.percentile-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;    
+}
+.percentile-paragraph {
+    font-size: 15px;
+    color:hsla(0, 0%, 100%, 0.6);
+}
+/* ! Right Card */
+.right {
+    grid-area: right;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.04);
+    border-radius: 0px 20px 20px 0px;
+}
+.right-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.right-title {
+    margin-bottom: 1.5rem;
+    font-size: 14px;
+}
+.metrics {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+.metric {
+    display:flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 0.9rem;
+    margin-bottom: 1rem;
+}
+.metric-icon-title {
+    display: flex;
+    justify-content: space-between;
+}
+.metric-icon {
+    margin-right: 1rem;
+}
+.metric-title {
+    font-weight: 700;
+    font-size: 14px;
+}
+.metric-score {
+    font-weight: 800;
+}
+#reaction {
+    background-color:hsla(0, 100%, 67%, 0.06);
+}
+#reaction > .metric-icon-title > .metric-title {
+    color: hsl(0, 100%, 67%);
+}
+#memory {
+    background-color:hsla(39, 100%, 56%, 0.06);
+}
+#memory > .metric-icon-title > .metric-title {
+    color: hsl(39, 100%, 56%);
+}
+#verbal {
+    background-color:hsla(166, 100%, 37%, 0.1)
+}
+#verbal > .metric-icon-title > .metric-title {
+    color: hsl(166, 100%, 37%);
+}
+#visual {
+    background-color:hsla(234, 85%, 45%, 0.06);
+}
+#visual > .metric-icon-title > .metric-title {
+    color: hsl(234, 85%, 45%);
+}
+.total {
+    color: hsl(224, 30%, 27%, 0.5);
+}
+.continue-button {
+    font-family: "Hanken Grotesk", sans-serif;
+    background-color:hsl(224, 30%, 27%);
+    color:hsl(0, 0%, 100%);
+    padding: 0.8rem;
+    border-radius: 25px;
+}
+/* ! Hover States */
+.continue-button:hover {
+    cursor: pointer;
+    background: linear-gradient(180deg, rgba(120,87,255,1) 35%, rgba(46,43,233,1) 100%); 
+}
+/* ! Mobile Sizes */
+/* Mobile L */
+@media screen and (max-width: 426px) {
+    /* ! Main Grid */
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 45% 55%;
+        grid-template-areas: 
+        "left"
+        "right";
+    }
+    /* ! Left Card */
+    .left {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .overall-score {
+        margin-bottom: 2rem;
+    }
+    .overall-score-background {
+        width: 150px;
+        height: 150px;
+    }
+    .percentile-paragraph {
+        font-size: 15px;
+        color:hsla(0, 0%, 100%, 0.6);
+        margin-bottom: 2.5rem;
+    }
+}
